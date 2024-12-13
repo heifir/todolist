@@ -1,0 +1,126 @@
+body {
+    background-color: #566573;
+}
+
+.todo-wrapper {
+    margin-top: 50px;
+    background-color: #fdfefe ;
+    /* border-radius: 20px; */
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 25px;
+    font-weight: 500;
+    /* -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px; */
+}
+
+.todo-wrapper h2 {
+    margin: 0;
+    font-size: 35px;
+}
+
+.todo-wrapper p {
+    font-style: italic;
+    margin: 5px 0;
+    font-size: 25px ;
+}
+
+.todo-wrapper ol {
+    margin: 20px 0;
+}
+
+.todo-wrapper ol li {
+    margin: 5px 0;
+    padding: 3px;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+}
+
+.todo-wrapper ol li:nth-child(even) {
+    background: #ddd;
+}
+
+.todo-wrapper .completed {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.todo-wrapper form {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+.todo-wrapper input {
+    padding: 3px 5px;
+    height: 2em;
+    width: 20em; 
+    
+}
+
+.todo-wrapper .pretty-button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    
+}
+
+.todo-wrapper .pretty-button {
+    height: 2.5em;
+    width: 15em;    
+    margin: 10px 15px ;
+    /* border-radius: 15px; */
+    padding: 5px 20px;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    background-color: blue;
+    /* -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px; */
+}
+
+#control-wrapper {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.todo-wrapper #clear-completed-button {
+    background-color: #49B749;
+}
+
+.todo-wrapper #empty-button {
+    background-color: #9B1C20;
+}
+
+.todo-wrapper #save-button {
+    background-color: #49B749;
+}
+
+@media only screen and (min-width: 1400px) {
+    .todo-wrapper {
+        width: 50%;
+    }
+
+    .todo-wrapper input {
+        width: 600px;
+    }   
+}
+
+@media only screen and (max-width: 1399px) and (min-width: 750px) {
+    .todo-wrapper {
+        width: 75%;
+    }
+
+    .todo-wrapper input {
+        width: 400px;
+    }
+}
